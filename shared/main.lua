@@ -4,7 +4,13 @@ AM.MenuLocation = 'top-right'                                               --'t
 AM.OpenMenuBind = 'o'                                                       --Whitch button should you press to open the menu
 AM.AlloweMiniGame = true                                                    --Allow minigame if player isnt in the right job?
 AM.ForcedProximity = 50.0                                                   --Proximity of the own voice megaphone
-AM.Langauge = 'en'
+
+AM.Langauge = 'hu'
+
+AM.UseProp = true
+AM.PropModel = `prop_megaphone_01`
+
+AM.OnlyInVehicle = true
 
 AM.Sounds = {
     ['en'] = {

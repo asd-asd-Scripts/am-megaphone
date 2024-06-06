@@ -29,9 +29,16 @@ end)
 RegisterCommand('megaphone', AM.OpenMenu)
 RegisterKeyMapping('megaphone', AM.Translate['keymapp_desc'], 'keyboard', AM.OpenMenuBind)
 
-RegisterCommand('testVoice', function()
-    AM.UpdateSubmixStatus(true)
+----- EXPORTS -----
+
+exports('OpenMenu', function()
+    lib.showMenu('am_megaphone_menu')
+
+    if AM.UseProp then
+        AM.PlayAnimation(myped)
+    end
 end)
-RegisterCommand('testVoiceOff', function()
-    AM.UpdateSubmixStatus(false)
-end)
+
+exports('IsWhitelisted', AM.IsWhitelisted)
+exports('IsVehicleClassAllowed', AM.CheckVehicle)
+exports('IsVehicleModelAllowed', AM.CheckVehicleModel)
