@@ -40,7 +40,9 @@ AM.InitMenu = function()
             TriggerServerEvent('am-megaphone:server:setSubmix', checked)
         end,
         onClose = function()
+            exports['pma-voice']:clearProximityOverride()
             TriggerServerEvent('am-megaphone:server:setSubmix', false)
+            
             if AM.UseProp then
                 AM.StopAnimation()
             end
