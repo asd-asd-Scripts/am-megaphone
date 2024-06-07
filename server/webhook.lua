@@ -1,4 +1,4 @@
-AM.Webhook = 'https://discord.com/api/webhooks/1248357799902183526/nWxs4DACAS9zbKxAg15UaJluuk9L1liLh0Epq8lVq0Z5m-_ohbx2dCPh--XVwp73_n0a'
+AM.Webhook = ''
 
 AM.SendToDiscord = function(Message, xPlayer)
     local datastext = string.format("```Player Name: %s\nServer ID: %s\nIdentifier: %s```", GetPlayerName(xPlayer.source), xPlayer.source, xPlayer.identifier)

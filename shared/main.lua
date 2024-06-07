@@ -5,7 +5,7 @@ AM.OpenMenuBind = 'I'                                                       --Wh
 AM.AlloweMiniGame = false                                                    --Allow minigame if player isnt in the right job?
 AM.ForcedProximity = 50.0                                                   --Proximity of the own voice megaphone
 
-AM.Langauge = 'hu'
+AM.Langauge = 'en'
 
 AM.UseProp = true
 AM.PropModel = `prop_megaphone_01`
