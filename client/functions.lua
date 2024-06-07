@@ -40,14 +40,21 @@ AM.InitMenu = function()
             TriggerServerEvent('am-megaphone:server:setSubmix', checked)
         end,
         onClose = function()
-            exports['pma-voice']:clearProximityOverride()
             TriggerServerEvent('am-megaphone:server:setSubmix', false)
-            
+            exports['pma-voice']:clearProximityOverride()
+
             if AM.UseProp then
                 AM.StopAnimation()
             end
         end,
     }, function(selected, scrollIndex, args)
+        if AM.SpamProtection then AM.Notification(AM.Translate['spam_prot'], 5000, 'error') return end
+        AM.SpamProtection = true
+
+        SetTimeout(5000, function()
+            AM.SpamProtection = false
+        end)
+
         AM.PlaySound(args[scrollIndex])
     end)
 
@@ -132,9 +139,9 @@ end
 AM.TrackEntitySound = function(entity, soundname)
     local xSound = exports.xsound 
 
-    while DoesEntityExist(entity) and xSound:soundExists(soundname) do
+    while DoesEntityExist(entity) and xSound:soundExists(soundname) and xSound:isPlaying(soundname) do
         local coords = GetEntityCoords(entity)
-        
+
         xSound:Position(soundname, coords)
         Wait(100)
     end

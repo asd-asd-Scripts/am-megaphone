@@ -13,11 +13,20 @@ RegisterNetEvent('am-megaphone:client:playsound', function(sound, source)
     local xSound = exports.xsound
     local soundname = 'am-megaphone'..tostring(source)
 
+    if xSound:soundExists(soundname) then 
+        xSound:Destroy(soundname)
+        return
+    end
+
     local soundId = xSound:PlayUrlPos(soundname, 'sounds/'..sound.sound, sound.volume, coords)
     xSound:Distance(soundname, sound.distance)
     
     CreateThread(function()
         AM.TrackEntitySound(entity, soundname)
+
+        if xSound:soundExists(soundname) then
+            xSound:Destroy(soundname)
+        end
     end)
 end)
 

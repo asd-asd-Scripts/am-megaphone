@@ -4,7 +4,7 @@ game 'gta5'
 name "am-megaphone"
 description "Megaphone script for FiveM"
 author "Amitae, asd.asd"
-version "1.1.2"
+version "1.1.4"
 lua54 "yes"
 
 shared_scripts {

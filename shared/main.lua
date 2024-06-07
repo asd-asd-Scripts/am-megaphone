@@ -1,8 +1,8 @@
 AM = {}
 
 AM.MenuLocation = 'top-right'                                               --'top-left' or 'top-right' or 'bottom-left' or 'bottom-right'
-AM.OpenMenuBind = 'o'                                                       --Whitch button should you press to open the menu
-AM.AlloweMiniGame = true                                                    --Allow minigame if player isnt in the right job?
+AM.OpenMenuBind = 'I'                                                       --Whitch button should you press to open the menu
+AM.AlloweMiniGame = false                                                    --Allow minigame if player isnt in the right job?
 AM.ForcedProximity = 50.0                                                   --Proximity of the own voice megaphone
 
 AM.Langauge = 'hu'
@@ -22,26 +22,26 @@ AM.Sounds = {
                 {
                     label = 'Away that easy...',                                  --Label of the sound in the menu
                     sound = 'away_easy.ogg',                                      --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'We need to have a little...',                     --Label of the sound in the menu
                     sound = 'stop_chat.ogg',                                    --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Step out of the vehicle',                             --Label of the sound in the menu
                     sound = 'step_out.ogg',                                       --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Stop your vehicle',                                    --Label of the sound in the menu
                     sound = 'stop_vehicle-2.ogg',                                --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 }
             }
         },
@@ -53,14 +53,14 @@ AM.Sounds = {
                 {
                     label = 'Clear the area',                              --Label of the sound in the menu
                     sound = 'clear_the_area.ogg',                          --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Disperse now!',                             --Label of the sound in the menu
                     sound = 'disperse_now.ogg',                         --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 }
             }
         },
@@ -76,26 +76,26 @@ AM.Sounds = {
                 {
                     label = 'Álljon félre...',                                  --Label of the sound in the menu
                     sound = 'aljonfelreajarmuvelazonnal.ogg',                   --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Most azonnal álljon félre...',                     --Label of the sound in the menu
                     sound = 'alljfelremostazonnal.ogg',                         --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Nem tudsz elbújni...',                             --Label of the sound in the menu
                     sound = 'nemtudszelbujni.ogg',                              --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Véged van...',                                    --Label of the sound in the menu
                     sound = 'vegedvanfaszfejaddfelmagad.ogg',                   --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 }
             }
         },
@@ -107,14 +107,14 @@ AM.Sounds = {
                 {
                     label = 'Feltett kezekkel...',                              --Label of the sound in the menu
                     sound = 'feltettkezekkelmostazonnal.ogg',                   --Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 },
                 {
                     label = 'Hagyja el a területet',                             --Label of the sound in the menu
                     sound = 'ittarendorseghagyjaelateruletetkulonbenbajlesz.ogg',--Name of the sound
-                    volume = 1.0,                                                --Volume of the sound
-                    distance = 75.0                                             --Distance of the sound
+                    volume = 0.65,                                                --Volume of the sound
+                    distance = 60.0                                             --Distance of the sound
                 }
             }
         },
@@ -152,6 +152,7 @@ AM.Translate = {
         ['no_whitelisted_job'] = 'You are not an officer!',
         ['own_voice'] = 'Use your own voice!',
         ['log_message'] = 'A player play this sound: %s',
+        ['spam_prot'] = 'Dont spam!',
     },
 
     ["hu"] = {
@@ -161,6 +162,7 @@ AM.Translate = {
         ['no_whitelisted_job'] = 'Nem vagy rendőr!',
         ['own_voice'] = 'Saját hang használata',
         ['log_message'] = 'Egy játékos használta a megaphone-t, lejátszott hang: %s',
+        ['spam_prot'] = 'Ne ilyen gyorsan!',
     },
 } AM.Translate = AM.Translate[AM.Langauge]
 
@@ -176,5 +178,5 @@ AM.SubmixSettings = {
 }
 
 AM.Notification = function(text, time, type)
-   ESX.ShowNotification(text)
+   Core.ShowNotification(text)
 end
